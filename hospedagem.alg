@@ -1,10 +1,10 @@
 algoritmo "hospedagemFacil.com"
-// Disciplina   : [Linguagem e Lógica de Programação] 
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o] 
 // Professor   : Antonio Carlos Nicolodi 
-// Função :
+// FunÃ§Ã£o :
 // Autor :
 // Data : 22/03/2023
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
    resp, nomeCompleto, telefone, quarto : caractere
    quantQuartos, quantHospedes, numeroHospedagem : inteiro
@@ -18,7 +18,7 @@ Escreval("|         HospedagemFacil.com         |")
 Escreval("---------------------------------------")
 Escreval("")
 
-Escreval("Olá Visitante, Bem-vindo!!!")
+Escreval("OlÃ¡ Visitante, Bem-vindo!!!")
 repita
       // Visita
       Escreval("Deseja fazer cadastro na rede?(Sim/Nao)")
@@ -26,14 +26,14 @@ repita
       leia(resp)
       Escreval("")
       Repita
-         // Decisão de hospedagem
+         // DecisÃ£o de hospedagem
          Se(resp="Sim")ou(resp="sim")Entao
               Escreval("---------------------------------------")
               Escreval("Cadastro [",numeroHospedagem,"]")
               Escreval("")
               
-              // Informações do hospede
-              Escreval(" ####### Informações pessoais #######  ")
+              // InformaÃ§Ãµes do hospede
+              Escreval(" ####### InformaÃ§Ãµes pessoais #######  ")
               Escreva("Nome completo: ")
               leia(nomeCompleto)
               Escreva("Telefone: ")
@@ -42,22 +42,22 @@ repita
               Escreval("")
 
               repita
-                 // Informações da hospedagem
-                 Escreval(" #### Informações para hospedagem ####")
+                 // InformaÃ§Ãµes da hospedagem
+                 Escreval(" #### InformaÃ§Ãµes para hospedagem ####")
                  Escreva("Quantidade de quartos que deseja: ")
                  leia(quantQuartos)
                  Escreva("Quantidade de pessoas para hospedagem: ")
                  leia(quantHospedes)
 
-                 // Verificando se o valores são válidos
+                 // Verificando se o valores sÃ£o vÃ¡lidos
                  se(quantQuartos=0)Entao
                        Escreval("Valor insuficiente!")
-                       Escreval("Quantidade de quartos mínimo: 1")
+                       Escreval("Quantidade de quartos mÃ­nimo: 1")
                        Escreval("")
                  senao
                       se(quantHospedes=0) entao
                            Escreval("Valor insuficiente!")
-                           Escreval("Quantidade mínima de hóspedes: 1")
+                           Escreval("Quantidade mÃ­nima de hÃ³spedes: 1")
                            Escreval("")
                       fimse
                  fimse
@@ -65,7 +65,7 @@ repita
               Escreval("_______________________________________")
               Escreval("")
 
-              // Calculo de preço final
+              // Calculo de preÃ§o final
               valorQuarto <- quantQuartos * 25.63
               valorHospede <- quantHospedes * 12.57
               valorFinal <- (valorQuarto + valorHospede) *2
@@ -76,7 +76,7 @@ repita
               Escreval("Quatidade de quartos:", quantQuartos, " | Quantidade de hospedes:", quantHospedes)
               Escreval("Valor Final da hospedagem = R$",valorFinal)
               Escreval("")
-              Escreval("Cadastro concluído")
+              Escreval("Cadastro concluÃ­do")
               Escreval("---------------------------------------")
               Escreval("")
               
@@ -96,7 +96,7 @@ repita
                            decisaoCliente <- falso
                       senao
                            Escreval("=======================================")
-                           Escreval("Desculpe, não entendi!")
+                           Escreval("Desculpe, nÃ£o entendi!")
                            Escreval("=======================================")
                            Escreval("")
                       fimse
@@ -109,7 +109,7 @@ repita
                    decisaoCliente <- falso
               senao
                    Escreval("=======================================")
-                   Escreval("Desculpe, não entendi!")
+                   Escreval("Desculpe, nÃ£o entendi!")
                    Escreval("=======================================")
                    Escreval("")
               fimse
@@ -118,6 +118,8 @@ repita
       ate(decisaoCliente=falso)
 ate(resp="sim")ou(resp="Sim")ou(resp="nao")ou(resp="Nao")
 Escreval("---------------------------------------")
-Escreval("|   A hospedagensFacil.com agradeçe   |")
+Escreval("|   A hospedagensFacil.com agradeÃ§e   |")
 Escreval("---------------------------------------")
 fimalgoritmo
+
+// Criado por Everton Martins
